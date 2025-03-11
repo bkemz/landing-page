@@ -1,15 +1,16 @@
 *{
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, Roboto;
 }
 
 .navbar{
     background-color: #1f2937;
     color: white;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
     flex: auto;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 15px;
     padding-right: 50px;
 }
 ul{
@@ -19,12 +20,13 @@ ul{
 ul li{
     margin-right: 20px;
 }
-ul li a{
+
+.navbar ul li a{
     color: white;
     text-decoration: none;
 }
-ul li a:hover{
-    color: #f1f1f1;
+.navbar ul li a:hover{
+    color: #e8eb47;
 }
 
 .hero{
@@ -37,6 +39,13 @@ ul li a:hover{
     height: auto;
     font-size: 30px;
     font-weight: 900;
+}
+.hero img {
+    min-height: 100px;
+    min-width: auto;
+    border-radius: 5%;
+    box-shadow: #f1f1f1;
+
 }
 .hero h1{
     font-size: 48px;
@@ -57,20 +66,80 @@ ul li a:hover{
 }
 
 .services{
-    display: inline-block;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
-    margin: 20px;
     background-color: #f9faf8;
-    border-radius: 5%;
-    box-shadow: 0 0 10px #f1f1f1;
+    text-align: center;
 }
+.card div img{
+    display: inline-block;
+    justify-content: space-between;
+    width: 100px;
+    height: auto;
+    padding: 20px;
 
+    background-color: #f9faf8;
+    border-radius: 10%;
+    text-align: center;
+    border-color: #3882f9;
+    border-style: solid;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .button{
     background-color: #f1f1f1;
-    color: #1f2937;
+    color: #3882f9;
     padding: 10px 20px;
-    border-radius: 10px;
     text-decoration: none;
+    Padding: 10px 20px;
+    margin-top:10px;
+}
+
+.footer{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    flex: auto;
+    padding-right: 50px;
+}
+
+.cta{
+    display: flex;
+    flex:auto;
+    padding: 20px;
+    margin: 100px;
+    background-color: #3882f9;
+    color: white;
+
+}
+.cta div{
+    padding: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.quote{  
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+}
+.quotesec{
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 80px;
+
+}
+.author{
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
 }
